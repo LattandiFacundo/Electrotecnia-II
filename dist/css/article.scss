@@ -1,0 +1,93 @@
+$formulas-background-color: #FD9B68;
+$article-background-color: #57C4E5;
+$back-background-color: #BCED09;
+$body-background-color: #7A6563;
+
+body{
+    background-color: $body-background-color;
+}
+
+#article-container{
+    //PC
+    @media (min-width: 768px){
+        #formulas-container{
+            background-color: $formulas-background-color;
+
+            font-family: 'Sono', sans-serif;
+            text-align: center;
+            
+            #formulas{
+                margin: 2vw;
+            }
+
+            width: 20vw;
+            height: 90vh;
+            position: fixed;
+            top: 5vh;
+            right: 5vh;
+            border-radius: 20px;
+        }
+
+        #leftContainer{
+            position: absolute;
+            width: 70vw;
+            margin-left: 2.5vw;
+            margin-top: 5vh;
+
+            display: block;
+            // align-items: center;
+            justify-content: center;
+        }
+
+        #back{
+            background-color: $back-background-color;
+            font-family: 'Sono', sans-serif;
+            
+            width: 25vw;
+            height: 5vh;
+            margin: 0 auto;
+            
+            border: none;
+            border-radius: 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span{
+                    margin-right: 10px;
+                    transform: scale(.75);
+                }
+            }
+        }
+
+        #title{
+
+        }
+
+        #article-container-inner{
+            background-color: $article-background-color;
+
+            // position: absolute;
+            width: 100%;
+            border-radius: 20px;
+
+
+            #article{
+                position: relative;
+                margin: 2vw;
+                padding-block: 2.5vh;
+            }
+        }
+    }
+
+    //Mobile
+    @media (max-width: 767px){
+        
+    }
+}
