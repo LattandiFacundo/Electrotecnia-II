@@ -1,10 +1,29 @@
-body {
-  background-color: #7A6563;
+#article-container #formulas {
+  color: #FFF;
 }
-
 @media (min-width: 768px) {
+  #article-container h1, #article-container h2 {
+    text-align: center;
+    font-family: "Sono", sans-serif;
+    font-weight: bold;
+  }
+  #article-container h1 {
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+  }
+  #article-container h2 {
+    font-size: 1.35em;
+    text-decoration: underline;
+    margin-block: 2vh;
+  }
+  #article-container h3 {
+    text-align: center;
+    font-family: "Sono", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.25vh;
+  }
   #article-container #formulas-container {
-    background-color: #FD9B68;
+    background-color: #D81E5B;
     font-family: "Sono", sans-serif;
     text-align: center;
     width: 20vw;
@@ -17,10 +36,13 @@ body {
   #article-container #formulas-container #formulas {
     margin: 2vw;
   }
+  #article-container #formulas-container #formulas p {
+    font-size: 1.2vw;
+  }
   #article-container #leftContainer {
     position: absolute;
     width: 70vw;
-    margin-left: 2.5vw;
+    margin-left: 3vw;
     margin-top: 5vh;
     display: block;
     justify-content: center;
@@ -42,18 +64,44 @@ body {
     align-items: center;
     justify-content: center;
   }
+  #article-container #back .container p {
+    font-size: 1.25em;
+    text-align: center;
+  }
   #article-container #back .container span {
     margin-right: 10px;
     transform: scale(0.75);
+  }
+  #article-container #title-container {
+    background-color: #B2FFA9;
+    width: 50vw;
+    height: 10vh;
+    margin: 5vh auto;
+    border-radius: 20px;
+    padding-block: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #article-container #title-container #title {
+    position: relative;
+    margin: auto;
   }
   #article-container #article-container-inner {
     background-color: #57C4E5;
     width: 100%;
     border-radius: 20px;
+    margin-block: 5vh;
   }
   #article-container #article-container-inner #article {
+    margin-inline: 2vw;
     position: relative;
-    margin: 2vw;
     padding-block: 2.5vh;
+    padding-inline: 2.5vh;
+  }
+  #article-container #article-container-inner #article p {
+    text-align: justify;
+    font-family: "Sono", sans-serif;
+    font-size: 1.125em;
   }
 }/*# sourceMappingURL=article.css.map */

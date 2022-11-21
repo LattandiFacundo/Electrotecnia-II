@@ -1,0 +1,73 @@
+$title-background-color: #B2FFA9;
+$articles-background-color: #57C4E5;
+
+#mainContainer{
+    h1, h2{
+        text-align: center;
+        font-family: 'Sono', sans-serif;
+        font-weight: bold;
+    }
+
+    .title-container{
+        // background-color: $title-background-color;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .title{
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            margin: auto;
+        }
+    }
+
+    #articlesContainer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+
+        button{
+            text-align: center;
+            font-family: 'Sono', sans-serif;
+        }
+    }
+
+    //PC
+    @media (min-width: 768px){
+        h1{
+            font-size: 3em;
+        }
+
+        .title-container{
+            margin: 7.5vh auto;
+        }
+
+        #articlesContainer{
+            width: calc(100% - 20vw);
+            
+            grid-template-columns: repeat(4, 1fr);
+            margin-inline: 10vw;
+            
+            button{
+                background-color: $articles-background-color;
+                font-size: 1.25em;
+                
+                width: 18vw;
+                height: auto;
+
+                border: none;
+                border-radius: 20px;
+                padding-block: 2vh;
+                padding-inline: 2vw;
+                margin-bottom: 5vh;
+
+            }
+        }
+    }
+
+    //Mobile
+    @media (max-width: 767px){
+        
+    }
+}

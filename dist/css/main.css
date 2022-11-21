@@ -8,4 +8,12 @@
   height: 0;
   visibility: hidden;
   display: none;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: linear-gradient(33deg, #ffffff 17%, #9c9e9e 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 92.5vh;
 }/*# sourceMappingURL=main.css.map */

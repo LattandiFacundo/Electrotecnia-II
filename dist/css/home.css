@@ -1,0 +1,48 @@
+#mainContainer h1, #mainContainer h2 {
+  text-align: center;
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
+}
+#mainContainer .title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mainContainer .title-container .title {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  margin: auto;
+}
+#mainContainer #articlesContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+#mainContainer #articlesContainer button {
+  text-align: center;
+  font-family: "Sono", sans-serif;
+}
+@media (min-width: 768px) {
+  #mainContainer h1 {
+    font-size: 3em;
+  }
+  #mainContainer .title-container {
+    margin: 7.5vh auto;
+  }
+  #mainContainer #articlesContainer {
+    width: calc(100% - 20vw);
+    grid-template-columns: repeat(4, 1fr);
+    margin-inline: 10vw;
+  }
+  #mainContainer #articlesContainer button {
+    background-color: #57C4E5;
+    font-size: 1.25em;
+    width: 18vw;
+    height: auto;
+    border: none;
+    border-radius: 20px;
+    padding-block: 2vh;
+    padding-inline: 2vw;
+    margin-bottom: 5vh;
+  }
+}/*# sourceMappingURL=home.css.map */
