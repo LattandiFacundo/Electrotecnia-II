@@ -1,17 +1,11 @@
 #mainContainer h1, #mainContainer h2 {
   text-align: center;
-  font-family: "Sono", sans-serif;
-  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  color: white;
 }
-#mainContainer .title-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#mainContainer .title-container .title {
-  font-family: "Playfair Display", serif;
-  position: relative;
-  margin: auto;
+#mainContainer h3 {
+  font-family: "Mali", cursive;
+  color: white;
 }
 #mainContainer #articlesContainer {
   display: grid;
@@ -23,26 +17,85 @@
   font-family: "Sono", sans-serif;
 }
 @media (min-width: 768px) {
-  #mainContainer h1 {
-    font-size: 3em;
+  #mainContainer .title {
+    font-size: 6em;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
   }
-  #mainContainer .title-container {
-    margin: 7.5vh auto;
+  #mainContainer #headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #mainContainer #articlesContainer {
-    width: calc(100% - 20vw);
-    grid-template-columns: repeat(4, 1fr);
-    margin-inline: 10vw;
+  #mainContainer #headerContainer #headerLeft {
+    margin-right: 10vw;
+    margin-left: -3vw;
   }
-  #mainContainer #articlesContainer button {
-    background-color: #57C4E5;
-    font-size: 1.25em;
-    width: 18vw;
-    height: auto;
+  #mainContainer #headerContainer #headerRight {
+    padding-inline: 3.4vw;
+  }
+  #mainContainer #headerContainer #headerRight p.light {
+    font-family: "Mali", cursive;
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 2vh;
+  }
+  #mainContainer #headerLeft img {
+    height: 60vh;
+    aspect-ratio: 3/4;
+  }
+  #mainContainer #temasButton {
     border: none;
-    border-radius: 20px;
-    padding-block: 2vh;
-    padding-inline: 2vw;
-    margin-bottom: 5vh;
+    width: 7.5vw;
+    height: 5vh;
+    border-radius: 10px;
+    background: rgb(171, 171, 171);
+    background: linear-gradient(45deg, rgba(171, 171, 171, 0.6961329698) 0%, rgb(255, 255, 255) 100%);
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2em;
+  }
+  #mainContainer #temasButton .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #mainContainer #temasButton .buttonContainer span {
+    margin-right: 0.25vw;
+    transform: scale(0.9);
+  }
+  #mainContainer #integrantes #integrantesInner {
+    width: 20vw;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #mainContainer #integrantes #integrantesInner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 12.5vw;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    text-decoration: none;
+  }
+  #mainContainer #integrantes #integrantesInner a p {
+    font-family: "Mali", cursive;
+    color: white;
+  }
+  #mainContainer #integrantes #integrantesInner a img {
+    width: 1.5vw;
+    margin-right: 0.25vw;
+  }
+  #mainContainer #integrantes h3 {
+    width: 100%;
+    text-align: left;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=home.css.map */

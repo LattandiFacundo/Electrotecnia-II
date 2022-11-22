@@ -1,0 +1,40 @@
+#temasContainer .background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#temasContainer #back2 {
+  color: white;
+  font-family: "Sono", sans-serif;
+  border: none;
+  border-radius: 20px;
+  background: none;
+  position: fixed;
+  top: 2.5vw;
+  left: 2.5vw;
+  transform: scale(2);
+}
+#temasContainer #articlesContainer {
+  width: calc(100% - 10vw);
+  grid-template-columns: repeat(4, 1fr);
+  margin-inline: 5vw;
+}
+#temasContainer #articlesContainer button {
+  background: rgb(253, 240, 213);
+  background: linear-gradient(45deg, rgb(253, 240, 213) 0%, rgb(198, 216, 211) 100%);
+  font-size: 1.25em;
+  width: 18vw;
+  height: auto;
+  border: none;
+  border-radius: 20px;
+  padding-block: 2vh;
+  padding-inline: 1vw;
+  margin-bottom: 5vh;
+  margin-inline: 2vw;
+  font-family: "Livvic", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}/*# sourceMappingURL=temas.css.map */

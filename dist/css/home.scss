@@ -1,25 +1,14 @@
-$title-background-color: #B2FFA9;
-$articles-background-color: #57C4E5;
-
 #mainContainer{
     h1, h2{
         text-align: center;
-        font-family: 'Sono', sans-serif;
-        font-weight: bold;
+        font-family: 'Press Start 2P', cursive;
+        // letter-spacing: 10px;
+        color: white;
     }
 
-    .title-container{
-        // background-color: $title-background-color;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .title{
-            font-family: 'Playfair Display', serif;
-            position: relative;
-            margin: auto;
-        }
+    h3{
+        font-family: 'Mali', cursive;
+        color: white;
     }
 
     #articlesContainer{
@@ -34,34 +23,100 @@ $articles-background-color: #57C4E5;
     }
 
     //PC
-    @media (min-width: 768px){
-        h1{
-            font-size: 3em;
+    @media (min-width: 768px){        
+        .title{
+            font-size: 6em;
+            margin-top: 10vh;
+            margin-bottom: 8vh;
         }
 
-        .title-container{
-            margin: 7.5vh auto;
+        #headerContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #headerLeft{
+                margin-right: 10vw;
+                margin-left: -3vw;
+            }
+            #headerRight{
+                p.light{
+                    font-family: 'Mali', cursive;
+                    color: white;
+                    font-size: 1.5em;
+                    text-align: left;
+                    margin-bottom: 2vh;
+                }
+                padding-inline: 3.4vw;
+            }
         }
 
-        #articlesContainer{
-            width: calc(100% - 20vw);
-            
-            grid-template-columns: repeat(4, 1fr);
-            margin-inline: 10vw;
-            
-            button{
-                background-color: $articles-background-color;
-                font-size: 1.25em;
-                
-                width: 18vw;
-                height: auto;
+        #headerLeft img{
+            height: 60vh;
+            aspect-ratio: 3/4;
+        }
 
-                border: none;
-                border-radius: 20px;
-                padding-block: 2vh;
-                padding-inline: 2vw;
-                margin-bottom: 5vh;
+        #temasButton{
+            border: none;
+            width: 7.5vw;
+            height: 5vh;
+            border-radius: 10px;
+            background: rgb(171,171,171);
+            background: linear-gradient(45deg, rgba(171,171,171,0.6961329697894783) 0%, rgba(255,255,255,1) 100%);
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2em;
 
+            .buttonContainer{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span{
+                    margin-right: .25vw;
+                    transform: scale(.9);
+                }
+            }
+        }
+
+        #integrantes{
+            #integrantesInner{
+                width: 20vw;
+                display: grid;
+                grid-template-columns: 1fr;
+
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    height: 6vh;
+                    width: 12.5vw;
+                    margin-bottom: 1vh;
+                    margin-right: 1vw;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #4158D0;
+                    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+                    text-decoration: none;
+                    
+                    p{
+                        font-family: 'Mali', cursive;
+                        color: white;
+                    }
+
+                    img{
+                        width: 1.5vw;
+                        margin-right: .25vw;
+                    }
+                }
+            }
+
+            h3{
+                width: 100%;
+                text-align: left;
+                margin-top: 1vh;
+                margin-bottom: 1.5vh;
+                font-size: 1.5em;
             }
         }
     }

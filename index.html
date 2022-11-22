@@ -10,43 +10,92 @@
     <link rel="stylesheet" href="./dist/css/article.css">
     <link rel="stylesheet" href="./dist/css/main.css">
     <link rel="stylesheet" href="./dist/css/fonts.css">
+    <link rel="stylesheet" href="./dist/css/temas.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div id="mainContainer">
-        <div class="title-container">
-            <h1 class="title">Electrotecnia II</h1>
+        <h1 class="title">ELECTROTECNIA II</h1>
+        <div id="headerContainer">
+            <div id="headerLeft">
+                <img id="headerImg1" src="./dist/src/header-img-1.jpg" alt="">
+                <img id="headerImg2" src="./dist/src/header-img-2.jpg" alt="">
+            </div>
+            <div id="headerRight">
+                <p class="light">Esto es un resumen de todos<br>los temas vistos<br>en el año</p>
+                <button id="temasButton">
+                    <div class="buttonContainer">
+                        <span class="material-symbols-outlined">apps</span>
+                        <p>TEMAS</p>
+                    </div>
+                </button>
+
+                <div id="integrantes">
+                    <h3>Integrantes:</h3>
+                    <div id="integrantesInner">
+                        <a href="https://www.instagram.com/lattandifacundo/" target="_blank">
+                            <img src="./dist/src/instagram.svg" alt="">
+                            <p>@lattandifacundo</p>
+                        </a>
+                        <a href="https://www.instagram.com/emialferez/" target="_blank">
+                            <img src="./dist/src/instagram.svg" alt="">
+                            <p>@emialferez</p>
+                        </a>
+                        <a href="https://www.instagram.com/matew.swagg/" target="_blank">
+                            <img src="./dist/src/instagram.svg" alt="">
+                            <p>@matew.swagg</p>
+                        </a>
+                        <a href="https://www.instagram.com/nico_g.1/" target="_blank">
+                            <img src="./dist/src/instagram.svg" alt="">
+                            <p>@nico_g.1</p>
+                        </a>
+                        <a href="https://www.instagram.com/nahueeeel_okk/" target="_blank">
+                            <img src="./dist/src/instagram.svg" alt="">
+                            <p>@nahueeeel_okk</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="articlesContainer">
-            <button onclick="lambda:updateArticle(1)">Campo magnético creado por una carga móvil</button>
-            <button onclick="lambda:updateArticle(2)"></button>
-            <button onclick="lambda:updateArticle(3)"></button>
-            <button onclick="lambda:updateArticle(4)"></button>
-            <button onclick="lambda:updateArticle(5)"></button>
-            <button onclick="lambda:updateArticle(6)"></button>
-            <button onclick="lambda:updateArticle(7)"></button>
-            <button onclick="lambda:updateArticle(8)"></button>
+    </div>
+
+    <div id="temasContainer" class="hidden">
+        <button id="back2"><span class="material-symbols-outlined">arrow_back</span></button>
+        
+        <div class="background">
+            <div id="articlesContainer">
+                <button onclick="lambda:updateArticle(0)">Capacitancia y capacitores</button>
+                <button onclick="lambda:updateArticle(1)">Ley de Faraday</button>
+                <button onclick="lambda:updateArticle(2)">Ley de Lenz</button>
+                <button onclick="lambda:updateArticle(3)">Ley de Hopkinson</button>
+                <button onclick="lambda:updateArticle(4)">Inducción magnética</button>
+                <button onclick="lambda:updateArticle(5)">Flujo magnético</button>
+                <button onclick="lambda:updateArticle(6)">Campo magnético creado por una carga móvil</button>
+                <button onclick="lambda:updateArticle(7)">Inductancia</button>
+                <button onclick="lambda:updateArticle(8)">Corrientes de Foucault</button>
+                <button onclick="lambda:updateArticle(9)">Ciclo de histéresis</button>
+                <button onclick="lambda:updateArticle(10)">Circuito magnéticos</button>
+                <button onclick="lambda:updateArticle(11)">Corriente alterna</button>
+            </div>
         </div>
     </div>
 
     <div id="article-container" class="hidden">
-        <div id="formulas-container">
-            <div id="formulas"></div>
-        </div>
-
-        <div id="leftContainer">
-            <button id="back">
-                <div class="container">
-                    <span class="material-symbols-outlined">arrow_back</span>
-                    <p>Volver</p>
-                </div>
-            </button>
-            <div id="title-container">
-                <h1 id="title"></h1>
+        <div class="background">
+            <div id="formulas-container">
+                <div id="formulas"></div>
             </div>
-            <div id="article-container-inner">
-                <div id="article"></div>
+
+            <div id="leftContainer">
+                <button id="back"><span class="material-symbols-outlined">arrow_back</span></button>
+                <div id="title-container">
+                    <h1 id="title"></h1>
+                </div>
+                <div id="article-container-inner">
+                    <div id="article"></div>
+                </div>
             </div>
         </div>
     </div>
