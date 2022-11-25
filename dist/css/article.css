@@ -57,6 +57,9 @@
   #article-container #formulas-container #formulas .doble {
     margin-top: 2.5vh;
   }
+  #article-container #formulas-container #formulas .smaller {
+    font-size: 0.9vw;
+  }
   #article-container #formulas-container #formulas p {
     font-size: 1.2vw;
   }
@@ -111,5 +114,9 @@
   }
   #article-container #article-container-inner #article .bigger {
     width: 40%;
+  }
+  #article-container #article-container-inner #article .whited {
+    background-color: white;
+    padding: 1vw;
   }
 }/*# sourceMappingURL=article.css.map */

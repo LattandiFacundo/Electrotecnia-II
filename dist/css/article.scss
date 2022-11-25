@@ -66,6 +66,10 @@ $back-background-color: #BCED09;
                     margin-top: 2.5vh;
                 }
 
+                .smaller{
+                    font-size: .9vw;
+                }
+
                 p{
                     font-size: 1.2vw;
                 }
@@ -142,6 +146,11 @@ $back-background-color: #BCED09;
 
                 .bigger{
                     width: 40%;
+                }
+
+                .whited{
+                    background-color: white;
+                    padding: 1vw;
                 }
             }
         }

@@ -142,6 +142,31 @@ const articles = {
         "formulas": ""
     },
 
+    "11": {
+        "title": "Corriente alterna",
+
+        "article": "<p>La corriente alterna es un tipo de corriente eléctrica, en la cual la dirección del flujo de electrones va y viene a intervalos regulares o en ciclos. La corriente que fluye por las líneas eléctricas y la electricidad disponible normalmente en las casas procedente de los enchufes de la pared es corriente alterna.</p>\
+        <img class=\"bigger whited\" src=\"./dist/src/img-11.png\"></img>\
+        <h2>Frecuencia</h2>\
+        <p>Es una magnitud periódica en la que el tiempo es la variable independiente al número de veces que la señal completa un ciclo en la unidad de tiempo.</p>\
+        <h2>Periodo</h2>\
+        <p>El periodo es el inverso de la frecuencia, es el tiempo en el que transcurre un ciclo.</p>\
+        <h2>Valor instantaneo</h2>\
+        <p>El valor instantáneo es el que tiene la señal en cualquier instante de tiempo. El valor instantáneo de una onda senoidal es el que toma la ordenada en cierto punto de las abscisas.</p>\
+        ",
+
+        "formulas": "<h2>Fórmulas</h2>\
+        <h3>Frecuencia</h3>\
+        <p class=\"smaller\">$f = frac {ciclos} {\"tiempo\"} = frac {omega} {2*pi} = [frac{\"vueltas\"} {s}] = [Hz]$</p>\
+        <p class=\"data\">$omega$ = velocidad angular</p>\
+        <h3>Periodo</h3>\
+        <p>$T = 1/f = frac {2*pi} {omega} = [s]$</p>\
+        <h3>Valor instanteneo</h3>\
+        <p>$e = E_max*sin(omega*t)$</p>\
+        \
+        "
+    },
+
     "x": {
         "title": "",
 
