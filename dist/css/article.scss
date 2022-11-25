@@ -22,21 +22,22 @@ $back-background-color: #BCED09;
         }
 
         h1{
-            font-size: 3em;
+            font-size: 3.25em;
             font-family: 'Kalam', cursive;
         }
 
         h2{
             font-size: 2em;
             text-decoration: underline;
-            margin-block: 2vh;
+            margin-block: 3vh;
         }
 
         h3{
             text-align: center;
             font-family: 'Sono', sans-serif;
             font-weight: bold;
-            margin-block: 1.25vh;
+            margin-block: 2.5vh;
+            font-size: 1.25em;
         }
 
         #formulas-container{
@@ -44,8 +45,27 @@ $back-background-color: #BCED09;
 
             font-family: 'Sono', sans-serif;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+                margin-top: 2.5vh;
+                // margin-bottom: 1.25vh;
+            }
             
             #formulas{
+                .data {
+                    margin-top: 1.5vh;
+                    margin-inline: 2vw;
+                    line-height: 1.5em;
+                    font-size: .75em;
+                    text-align: center;
+                }
+                .doble{
+                    margin-top: 2.5vh;
+                }
+
                 p{
                     font-size: 1.2vw;
                 }
@@ -100,24 +120,28 @@ $back-background-color: #BCED09;
         }
 
         #article-container-inner{
-
             #article{
                 margin-inline: 2vw;
                 position: relative;
-                padding-block: 2.5vh;
+                padding-bottom: 5vh;
                 padding-inline: 2.5vh;
 
                 p{
                     text-align: justify;
                     font-family: 'Sono', sans-serif;
                     font-size: 1.5em;
+                    margin-top: 2.5vh;
                 }
 
                 img{
-                    margin-block: 2vh;
+                    margin-top: 2.5vh;
                     display: block;
                     margin-inline: auto;
-                    width: 20%;
+                    width: 25%;
+                }
+
+                .bigger{
+                    width: 40%;
                 }
             }
         }

@@ -18,7 +18,7 @@
 }
 @media (min-width: 768px) {
   #mainContainer .title {
-    font-size: 6em;
+    font-size: 5.3vw;
     margin-top: 10vh;
     margin-bottom: 8vh;
   }
@@ -42,7 +42,7 @@
     margin-bottom: 2vh;
   }
   #mainContainer #headerLeft img {
-    height: 60vh;
+    height: 30vw;
     aspect-ratio: 3/4;
   }
   #mainContainer #temasButton {
@@ -54,6 +54,7 @@
     background: linear-gradient(45deg, rgba(171, 171, 171, 0.6961329698) 0%, rgb(255, 255, 255) 100%);
     font-family: "Oswald", sans-serif;
     font-size: 1.2em;
+    margin-bottom: 1vh;
   }
   #mainContainer #temasButton .buttonContainer {
     display: flex;
