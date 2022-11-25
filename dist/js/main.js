@@ -54,7 +54,7 @@ const articles = {
         "title": "Ley de Hopkinson",
 
         "article": "<p>Esta ley explica las bases de los circuitos magnéticos; se puede entender como una analogía a la ley de Ohm, donde la fuerza magnetomotriz es la tensión, el flujo magnético la corriente eléctrica y la reluctancia la resistencia.</p>\
-        <img src=\"./dist/src/img-6.jpg\"></img>\
+        <img class=\"bigger\" src=\"./dist/src/img-6.jpg\"></img>\
         ",
 
         "formulas": "<p>$Fmm = Phi * cc \"R\"$</p>\
@@ -98,28 +98,13 @@ const articles = {
     "4": {
         "title": "Inducción magnética",
 
-        "article": "<h2></h2>\
-        <p></p>\
-        <img src=\"./dist/src/img-6.png\"></img>\
+        "article": "<p>Es el proceso mediante el cual un campo magnético induce a un material, generando movimientos o, si esta es variable, electricidad (Ver ley de faraday). La permeabilidad es la capacidad de un material de conducir el campo magnético.</p>\
+        <img class=\"bigger\" src=\"./dist/src/img-induccion.jpg\"></img>\
         ",
 
         "formulas": "<h2>Fórmulas</h2>\
-        <h3></h3>\
-        <p>$$</p>\
-        <p class=\"data\"></p>\
-        "
-    },
-
-    "5": {
-        "title": "Flujo magnético",
-
-        "article": "<p>El flujo magnético es una de medir el magnetismo, midiendolo a partir del campo magnético, la superficie sobre la cual actúa y el ángulo de incidencia formado entre las líneas de campo magnético y dicha superficie.</p>\
-        <img class=\"bigger\" src=\"./dist/src/img-8.svg\"></img>\
-        ",
-
-        "formulas": "<h2>Fórmulas</h2>\
-        <p>$Phi = B*A*cos(theta)$</p>\
-        <p class=\"doble\">$Phi = frac{Fmm} {cc \"R\"}$</p>\
+        <p>$vecB = mu*vecH$</p>\
+        <p class=\"data\">$vecH$ = Intensidad del campo magnético<br>$mu$ = Permeabilidad del material</p>\
         "
     },
 
@@ -142,6 +127,36 @@ const articles = {
         "formulas": ""
     },
 
+    "10": { 
+        "title": "Circuitos magnéticos", 
+ 
+        "article": "<p>En las máquinas eléctricas se utilizan circuitos de materiales ferromagnéticos para conducir los campos magnéticos necesarios para su funcionamiento. Esto hace necesario saber calcular la inducción magnética que ocasiona una corriente dada, en un arrollamiento determinado y sobre un núcleo de forma, material y dimensiones conocidas; o al revés, saber dimensionar un núcleo y un arrollamiento para producir una inducción magnética determinada. Podemos decir que existe cierta analogía entre un circuito magnético y un circuito eléctrico. En un circuito magnético, el flujo que se genera en el interior de una bobina puede ser transportado por un material ferromagnético. Debe tenerse en cuenta que para calcular la reluctancia de un circuito magnético se tiene que conocer la permeabilidad y esta depende de la inducción magnética, se calcula la reluctancia con ese valor de la permeabilidad y se obtiene una fuerza magneto motriz. Si la inducción obtenida con esa fuerza magnetomotriz es la supuesta, el problema está resuelto, y si no es la supuesta, se reitera el proceso hasta dar con el valor correcto.</p>\
+        <img class=\"bigger\" src=\"./dist/src/img-circuitomag.jpg\"></img>\
+        <h2>Fuerza magnetomotriz</h2>\
+        <p>La fuerza magneto motriz $F_\"mm\"$ es aquella capaz de producir un flujo magnético entre dos puntos de un circuito magnético.</p>\
+        <h2>Reluctancia magnética</h2>\
+        <p>La reluctancia magnética o resistencia magnética es la oposición que un medio presenta al paso del flujo magnético: a mayor reluctancia, más difícil es establecer el flujo magnético.</p>\
+        <h2>Flujo magnético</h2>\
+        <p>El flujo magnético es una de medir el magnetismo, midiendolo a partir del campo magnético, la superficie sobre la cual actúa y el ángulo de incidencia formado entre las líneas de campo magnético y dicha superficie.</p>\
+        <img class=\"bigger\" src=\"./dist/src/img-8.svg\"></img>\
+        ", 
+ 
+        "formulas": "<h2>Fórmulas</h2>\
+        <h3>Reluctancia magnética</h3>\
+        <p>$cc \"R\" = frac{d}{mu*A} = [A/\"Wb\"]$</p>\
+        <p class=\"doble\">$cc \"R\" = frac{F_\"mm\"}{Phi}$</p>\
+        <h3>Fuerza magnetomotriz</h3>\
+        <p>$F_\"mm\" = N*I = [A*v]$</p>\
+        <p class=\"doble\">$F_\"mm\" = cc \"R\" * Phi$</p>\
+        <h3>Flujo magnético</h3>\
+        <p>$Phi = B*A*cos(theta) = [Wb]$</p>\
+        <p class=\"doble\">$Phi = frac{Fmm} {cc \"R\"}$</p>\
+        \
+        <p class=\"data\"></p>\
+        " 
+    },
+
+
     "11": {
         "title": "Corriente alterna",
 
@@ -151,8 +166,14 @@ const articles = {
         <p>Es una magnitud periódica en la que el tiempo es la variable independiente al número de veces que la señal completa un ciclo en la unidad de tiempo.</p>\
         <h2>Periodo</h2>\
         <p>El periodo es el inverso de la frecuencia, es el tiempo en el que transcurre un ciclo.</p>\
+        <h2>Velocidad Angular</h2>\
+        <p>Es una medida de la velocidad de rotación. Se define como el ángulo girado por una unidad de tiempo, osea, $omega = frac{Deltatheta}{Deltat}$, y se designa mediante la letra griega $omega$.</p>\
         <h2>Valor instantaneo</h2>\
         <p>El valor instantáneo es el que tiene la señal en cualquier instante de tiempo. El valor instantáneo de una onda senoidal es el que toma la ordenada en cierto punto de las abscisas.</p>\
+        <h2>Valor medio</h2>\
+        <p>El valor medio de una onda senoidal simétrica se define como la media algebraica de los valores instantáneos durante un semiperiodo.</p>\
+        <h2>Valor eficaz</h2>\
+        <p>Se corresponde con el valor de lectura de los instrumentos de medición cuándo medimos valor de corriente o tensión alterna. El valor eficaz de una corriente alterna es el valor, que llevado a corriente continua produce los mismos efectos caloríficos en las resistencias.</p>\
         ",
 
         "formulas": "<h2>Fórmulas</h2>\
@@ -160,11 +181,28 @@ const articles = {
         <p class=\"smaller\">$f = frac {ciclos} {\"tiempo\"} = frac {omega} {2*pi} = [frac{\"vueltas\"} {s}] = [Hz]$</p>\
         <p class=\"data\">$omega$ = velocidad angular</p>\
         <h3>Periodo</h3>\
-        <p>$T = 1/f = frac {2*pi} {omega} = [s]$</p>\
+        <p class=\"smaller\">$T = 1/f = frac {2*pi} {omega} = [s]$</p>\
         <h3>Valor instanteneo</h3>\
         <p>$e = E_max*sin(omega*t)$</p>\
+        <h3>Valor medio</h3>\
+        <p class=\"smaller\">$E_\"medio\"=2/pi*E_\"max\"$</p>\
+        <h3>Valor eficaz</h3>\
+        <p class=\"smaller\">$E_\"eficaz\" = E_\"max\"/sqrt(2)$</p>\
+        <p class=\"doble smaller\">$I_\"eficaz\" = I_\"max\"/sqrt(2)$</p>\
         \
         "
+    },
+
+    "1": { 
+        "title": "Ley de Faraday - Lenz", 
+ 
+        "article": "<p>La ley de Faraday nos indica que la fuerza electromotriz inducida (femi) se produce exclusivamente por las variaciones de flujo magnético, es decir, no necesariamente se tiene que producir un movimiento en el conductor, si no que basta con provocar un aumento o disminución del flujo magnético para producir una femi. Según la ley de Lenz, la femi que se genera causa efectos contrarios a la causa que lo origina.</p>\
+        <img src=\"https://www.lookandlearn.com/history-images/preview/M/M520/M520703_Faradays-first-Experiment.jpg\"></img>\
+        ", 
+ 
+        "formulas": "<h2>Fórmulas</h2>\
+        <h3>Ley de Faraday - Lenz</h3>\
+        <p>$e = - frac{DeltaPhi}{Deltat} = [V] = [frac {T*m^2} {s}]$</p>"
     },
 
     "x": {
